@@ -1,0 +1,85 @@
+/**
+ * Created by xishiyi7 on 2016/5/26.
+ */
+
+.loading-opacity-h2 {
+  margin: 0;
+  font: .8em verdana;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+  position: relative;
+  bottom: .5em;
+}
+.loading-scale {
+  font-size: 16px;
+  width: 9em;
+  position: relative;
+  left: 50%;
+  margin-left: -4em;
+  display: block;
+}
+.loading-scale div {
+  width: 1.5em;
+  height: 1.5em;
+  background: #3AC;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: loading-animate-scale 1s infinite;
+          animation: loading-animate-scale 1s infinite;
+}
+.loading-scale div:nth-of-type(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  background: #32AACC;
+}
+.loading-scale div:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  background: #64AACC;
+}
+.loading-scale div:nth-of-type(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  background: #96AACC;
+}
+.loading-scale div:nth-of-type(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  background: #C8AACC;
+}
+.loading-scale div:nth-of-type(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  background: #FAAACC;
+}
+@-webkit-keyframes loading-animate-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes loading-animate-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
